@@ -1,4 +1,7 @@
 const router = require('express').Router()
+// const path = require('path')
+
+const notes = require('../db/db.json')
 
 // WHEN I open the Note Taker
 // THEN I am presented with a landing page with a link to a notes page - check
@@ -12,5 +15,8 @@ const router = require('express').Router()
 // THEN that note appears in the right-hand column
 // WHEN I click on the Write icon in the navigation at the top of the page
 // THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+router.get('/notes', (req, res) => {
+    res.json(notes)
+})
 
 module.exports = router

@@ -1,11 +1,14 @@
 const router = require('express').Router()
 const path = require('path')
 
-//the index page works by default
-
 //get the notes page
 router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'notes.html'))
+})
+
+//the index page 
+router.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
 })
 
 module.exports = router
