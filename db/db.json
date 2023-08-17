@@ -1,7 +1,17 @@
 [
     {
         "id": 1,
-        "title":"Test Title",
-        "text":"Test text"
+        "title":"Call Bob",
+        "text":"Call Bob to discuss lunch plans"
+    },
+    {
+        "id": 2,
+        "title":"File taxes",
+        "text":"One of the 3 constants of the world"
+    },
+    {
+        "id": 3,
+        "title":"STAN!",
+        "text":"No Explanation needed"
     }
 ]

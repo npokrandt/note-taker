@@ -1,5 +1,6 @@
 const router = require('express').Router()
 // const path = require('path')
+const uniqid = require('uniqid')
 
 const notes = require('../db/db.json')
 
@@ -17,6 +18,19 @@ const notes = require('../db/db.json')
 // THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 router.get('/notes', (req, res) => {
     res.json(notes)
+})
+
+router.post('/notes', async(req, res) => {
+    console.log(req.body)
+
+    //no need to check for missing parts; note can't be submitted unless both title and text are present!
+
+    //make sure id thing is figured out
+
+    //file is read in above; write to the file
+
+    //in time this will return the updated notes file
+    res.end()
 })
 
 module.exports = router
