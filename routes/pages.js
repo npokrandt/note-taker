@@ -6,7 +6,7 @@ router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'notes.html'))
 })
 
-//the index page 
+//get the index page 
 router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
 })

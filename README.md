@@ -16,9 +16,9 @@ Viewing a note:
 
 ## Link
 
-Link to the website on heroku
+Link to the website on heroku:
 
-<!-- eventually my heroku link -->
+https://nathan-note-taker-2e9b5599f0ca.herokuapp.com
 
 ## Credits
 

@@ -1,3 +1,4 @@
+// setup stuff
 const routes = require('./routes')
 const express = require('express')
 const app = express()
@@ -11,9 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 app.use(routes)
-//things
 
-//listening on port this
+//listening for the selected port
 app.listen(PORT, () =>{
     console.log(`Note Taker listening on http://localhost:${PORT}`)
 })
