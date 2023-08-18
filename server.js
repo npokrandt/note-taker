@@ -1,7 +1,8 @@
 const routes = require('./routes')
 const express = require('express')
 const app = express()
-const PORT = 2024
+const PORT = process.env.PORT || 2024
+
 
 //middleware
 app.use(express.static('public'))
